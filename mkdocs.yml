@@ -9,6 +9,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.instant
     - toc.integrate
     - navigation.path
     - navigation.top
@@ -24,13 +25,13 @@ theme:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
       primary: light blue
-      accent: lime 
+      accent: dark blue 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
       primary: light blue
-      accent: lime
+      accent: dark blue
 
 plugins:
   - social
@@ -59,6 +60,10 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - tables
+  - def_list
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
