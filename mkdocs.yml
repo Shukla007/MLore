@@ -1,4 +1,5 @@
 site_name: MlOre
+site_url: https://shukla007.github.io/MLore/
 repo_url: https://github.com/shukla007/MLOre
 repo_name: shukla007/MLOre
 
@@ -34,8 +35,10 @@ theme:
       accent: dark blue
 
 plugins:
-  - social
+  - social:
+      enabled: !ENV [CI, false]
   - search
+  
 
 extra:
   social:
